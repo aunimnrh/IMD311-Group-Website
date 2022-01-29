@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<title>Haneul Cafe</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/cafe one.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+ 
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-sand">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-sand">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-sand">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-sand">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-sand">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag w3-sand">Open Everyday from 7am to 9pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px; font-family: gabriel;">Haneul<br>Cafe</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">17 Aciel Street, Kuala Lumpur</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale-min w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide w3-pale-red">ABOUT THE CAFE</span></h5>
+    <p>Established in 2021, Haneul Cafe was founded by three friends who have a passion in baking and loves coffee. Our cafe serves various types of cakes and desserts to satisfy the customers cravings. Located at a small town in Kuala Lumpur, Haneul Cafe ensures beautiful and delicious coffee and desserts. </p>
+    <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast or brunch sandwiches, as well as a selection of any kinds of pastries from croissants, puff pastry and even cinnamon rolls. </p>
+    <div class="w3-panel w3-round-xlarge w3-pale-red">
+      <p style="font-family: gabriel;"><i>"This cafe runs on love, laughter and lots of strong coffee"</i></p>
+      <p></p>
+    </div>
+    <img src="images/coffee.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> everyday from 7am to 9pm</p>
+    <p><strong>Address:</strong> 17 Aciel Street, Kuala Lumpur</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-pale-red">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink w3-pale-red">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Pastries</h5>
+      <p class="w3-text-grey">Assortment of delicious flaky pastries:<br>Croissants<br>Puff Pastry</p><br>
+    
+      <h5>Cakes</h5>
+      <p class="w3-text-grey">Strawberry Shortcake<br>Chocolate Indulgence<br>New York Cheesecake<br>Japanese Fluffy Cheesecake</p><br>
+    
+      <h5>Waffles</h5>
+      <p class="w3-text-grey">Vanilla flavored batter with malted flour comes in various flavours:<br>Nutella<br>Biscoff<br>Peanut Butter</p><br>
+    
+      <h5>Scrambled Eggs</h5>
+      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions and toasted garlic bread</p><br>
+    
+      <h5>Sandwiches</h5>
+      <p class="w3-text-grey">Egg Sandwiches<br>Grilled Cheese Sandwich<br>Chicken Sandwich<br>Ham Sandwich</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Latte <br> Mocha <br> Americano <br> Espresso</p><br>
+    
+      <h5>Chocolate</h5>
+      <p class="w3-text-grey">Chocolate Milk with whipped cream and choco flakes</p><br>
+    
+      <h5>Smoothie</h5>
+      <p class="w3-text-grey">Strawberry<br>Banana<br>Blueberry<br>Mango<br>Passionfruit </p><br>
+    
+      <h5>Ades</h5>
+      <p class="w3-text-grey">Lemon Ade<br>Apple Ade<br>Strawberry Ade<br>Watermelon Ade</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, Pepsi</p>
+    </div>  
+    <img src="images/croffle.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-pale-red">OUR STORE LOCATION</span></h5>
+    <div class="w3-panel w3-round-xlarge w3-pale-green">
+    <p>Our shop is located at 17 Aciel Street, Kuala Lumpur. Use Waze or Google Maps to find us!</p>
+    <p>Still can't find us? Order for delivery via GrabFood :)</p>
+  </div>
+
+    <img src="images/map.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">Hold up!</span> We offer full-service catering for any event, large or small. Birthday parties? Anniversaries? Baby Showers? You name it, we understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p><strong>Reserving</strong> a table? ask us for today's specialities or just send us a message below:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Number of guests" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message / Requirements" required name="Message"></p>
+      <p><button class="w3-button w3-pale-red" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-pale-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-pale-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
